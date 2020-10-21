@@ -1,0 +1,171 @@
+$date
+	Fri Oct 16 05:00:51 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_day $end
+$var wire 1 ! LED0 $end
+$var wire 8 " HEX5 [7:0] $end
+$var wire 8 # HEX4 [7:0] $end
+$var wire 8 $ HEX3 [7:0] $end
+$var wire 8 % HEX2 [7:0] $end
+$var wire 8 & HEX1 [7:0] $end
+$var wire 8 ' HEX0 [7:0] $end
+$var reg 1 ( ADC_CLK_10 $end
+$var reg 2 ) KEY [1:0] $end
+$scope module U0 $end
+$var wire 1 ( ADC_CLK_10 $end
+$var wire 1 ! LED0 $end
+$var wire 4 * off [3:0] $end
+$var wire 1 + reset $end
+$var wire 1 , clk $end
+$var wire 8 - HEX5 [7:0] $end
+$var wire 8 . HEX4 [7:0] $end
+$var wire 8 / HEX3 [7:0] $end
+$var wire 8 0 HEX2 [7:0] $end
+$var wire 8 1 HEX1 [7:0] $end
+$var wire 8 2 HEX0 [7:0] $end
+$var reg 8 3 BCD [7:0] $end
+$scope module clk_div_inst $end
+$var wire 1 ( clk_in $end
+$var reg 1 , clk_out $end
+$var reg 23 4 counter [22:0] $end
+$var reg 1 5 led $end
+$upscope $end
+$scope module seg7_decoder_inst_0 $end
+$var wire 4 6 in [3:0] $end
+$var reg 8 7 out [7:0] $end
+$upscope $end
+$scope module seg7_decoder_inst_1 $end
+$var wire 4 8 in [3:0] $end
+$var reg 8 9 out [7:0] $end
+$upscope $end
+$scope module seg7_decoder_inst_2 $end
+$var wire 4 : in [3:0] $end
+$var reg 8 ; out [7:0] $end
+$upscope $end
+$scope module seg7_decoder_inst_3 $end
+$var wire 4 < in [3:0] $end
+$var reg 8 = out [7:0] $end
+$upscope $end
+$scope module seg7_decoder_inst_4 $end
+$var wire 4 > in [3:0] $end
+$var reg 8 ? out [7:0] $end
+$upscope $end
+$scope module seg7_decoder_inst_5 $end
+$var wire 4 @ in [3:0] $end
+$var reg 8 A out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11000000 A
+b0 @
+b11111001 ?
+b1 >
+b11111111 =
+b1111 <
+b11111111 ;
+b1111 :
+b11111111 9
+b1111 8
+b11111111 7
+b1111 6
+x5
+b10 4
+b1 3
+b11111111 2
+b11111111 1
+b11111111 0
+b11111111 /
+b11111001 .
+b11000000 -
+0,
+1+
+b1111 *
+b1 )
+1(
+b11111111 '
+b11111111 &
+b11111111 %
+b11111111 $
+b11111001 #
+b11000000 "
+x!
+$end
+#10000
+0(
+#20000
+b10100100 #
+b10100100 .
+b10100100 ?
+b10 >
+b10 3
+0!
+05
+1,
+b1 4
+1(
+#30000
+0(
+#40000
+x!
+15
+0,
+b10 4
+1(
+#50000
+0(
+#60000
+b10110000 #
+b10110000 .
+b10110000 ?
+b11 >
+b11 3
+0!
+05
+1,
+b1 4
+1(
+#70000
+0(
+#80000
+x!
+15
+0,
+b10 4
+1(
+#90000
+0(
+#100000
+b10011001 #
+b10011001 .
+b10011001 ?
+b100 >
+b100 3
+0!
+05
+1,
+b1 4
+1(
+#110000
+0(
+#120000
+b11111001 #
+b11111001 .
+b11111001 ?
+b1 >
+b1 3
+x!
+15
+0,
+b10 4
+0+
+b0 )
+1(

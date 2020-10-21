@@ -1,0 +1,255 @@
+|Project2
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+ADC_CLK_10 => ADC_CLK_10.IN1
+LEDR[0] << day_counter:day_counter_inst.LED0
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+HEX0[0] << day_counter:day_counter_inst.HEX0
+HEX0[1] << day_counter:day_counter_inst.HEX0
+HEX0[2] << day_counter:day_counter_inst.HEX0
+HEX0[3] << day_counter:day_counter_inst.HEX0
+HEX0[4] << day_counter:day_counter_inst.HEX0
+HEX0[5] << day_counter:day_counter_inst.HEX0
+HEX0[6] << day_counter:day_counter_inst.HEX0
+HEX0[7] << day_counter:day_counter_inst.HEX0
+HEX1[0] << day_counter:day_counter_inst.HEX1
+HEX1[1] << day_counter:day_counter_inst.HEX1
+HEX1[2] << day_counter:day_counter_inst.HEX1
+HEX1[3] << day_counter:day_counter_inst.HEX1
+HEX1[4] << day_counter:day_counter_inst.HEX1
+HEX1[5] << day_counter:day_counter_inst.HEX1
+HEX1[6] << day_counter:day_counter_inst.HEX1
+HEX1[7] << day_counter:day_counter_inst.HEX1
+HEX2[0] << day_counter:day_counter_inst.HEX2
+HEX2[1] << day_counter:day_counter_inst.HEX2
+HEX2[2] << day_counter:day_counter_inst.HEX2
+HEX2[3] << day_counter:day_counter_inst.HEX2
+HEX2[4] << day_counter:day_counter_inst.HEX2
+HEX2[5] << day_counter:day_counter_inst.HEX2
+HEX2[6] << day_counter:day_counter_inst.HEX2
+HEX2[7] << day_counter:day_counter_inst.HEX2
+HEX3[0] << day_counter:day_counter_inst.HEX3
+HEX3[1] << day_counter:day_counter_inst.HEX3
+HEX3[2] << day_counter:day_counter_inst.HEX3
+HEX3[3] << day_counter:day_counter_inst.HEX3
+HEX3[4] << day_counter:day_counter_inst.HEX3
+HEX3[5] << day_counter:day_counter_inst.HEX3
+HEX3[6] << day_counter:day_counter_inst.HEX3
+HEX3[7] << day_counter:day_counter_inst.HEX3
+HEX4[0] << day_counter:day_counter_inst.HEX4
+HEX4[1] << day_counter:day_counter_inst.HEX4
+HEX4[2] << day_counter:day_counter_inst.HEX4
+HEX4[3] << day_counter:day_counter_inst.HEX4
+HEX4[4] << day_counter:day_counter_inst.HEX4
+HEX4[5] << day_counter:day_counter_inst.HEX4
+HEX4[6] << day_counter:day_counter_inst.HEX4
+HEX4[7] << day_counter:day_counter_inst.HEX4
+HEX5[0] << day_counter:day_counter_inst.HEX5
+HEX5[1] << day_counter:day_counter_inst.HEX5
+HEX5[2] << day_counter:day_counter_inst.HEX5
+HEX5[3] << day_counter:day_counter_inst.HEX5
+HEX5[4] << day_counter:day_counter_inst.HEX5
+HEX5[5] << day_counter:day_counter_inst.HEX5
+HEX5[6] << day_counter:day_counter_inst.HEX5
+HEX5[7] << day_counter:day_counter_inst.HEX5
+
+
+|Project2|day_counter:day_counter_inst
+ADC_CLK_10 => ADC_CLK_10.IN1
+reset => BCD[0].PRESET
+reset => BCD[1].ACLR
+reset => BCD[2].ACLR
+reset => BCD[3].ACLR
+reset => BCD[4].ACLR
+reset => BCD[5].ACLR
+reset => BCD[6].ACLR
+reset => BCD[7].ACLR
+LED0 <= clk_div:clk_div_inst.led
+HEX0[0] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[1] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[2] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[3] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[4] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[5] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[6] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX0[7] <= seg7_decoder:seg7_decoder_inst_0.out
+HEX1[0] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[1] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[2] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[3] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[4] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[5] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[6] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX1[7] <= seg7_decoder:seg7_decoder_inst_1.out
+HEX2[0] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[1] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[2] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[3] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[4] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[5] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[6] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX2[7] <= seg7_decoder:seg7_decoder_inst_2.out
+HEX3[0] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[1] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[2] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[3] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[4] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[5] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[6] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX3[7] <= seg7_decoder:seg7_decoder_inst_3.out
+HEX4[0] <= seg7_decoder:seg7_decoder_inst_4.out[0]
+HEX4[1] <= seg7_decoder:seg7_decoder_inst_4.out[1]
+HEX4[2] <= seg7_decoder:seg7_decoder_inst_4.out[2]
+HEX4[3] <= seg7_decoder:seg7_decoder_inst_4.out[3]
+HEX4[4] <= seg7_decoder:seg7_decoder_inst_4.out[4]
+HEX4[5] <= seg7_decoder:seg7_decoder_inst_4.out[5]
+HEX4[6] <= seg7_decoder:seg7_decoder_inst_4.out[6]
+HEX4[7] <= seg7_decoder:seg7_decoder_inst_4.out[7]
+HEX5[0] <= seg7_decoder:seg7_decoder_inst_5.out[0]
+HEX5[1] <= seg7_decoder:seg7_decoder_inst_5.out[1]
+HEX5[2] <= seg7_decoder:seg7_decoder_inst_5.out[2]
+HEX5[3] <= seg7_decoder:seg7_decoder_inst_5.out[3]
+HEX5[4] <= seg7_decoder:seg7_decoder_inst_5.out[4]
+HEX5[5] <= seg7_decoder:seg7_decoder_inst_5.out[5]
+HEX5[6] <= seg7_decoder:seg7_decoder_inst_5.out[6]
+HEX5[7] <= seg7_decoder:seg7_decoder_inst_5.out[7]
+
+
+|Project2|day_counter:day_counter_inst|seg7_decoder:seg7_decoder_inst_5
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|Project2|day_counter:day_counter_inst|seg7_decoder:seg7_decoder_inst_4
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|Project2|day_counter:day_counter_inst|seg7_decoder:seg7_decoder_inst_3
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|Project2|day_counter:day_counter_inst|seg7_decoder:seg7_decoder_inst_2
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|Project2|day_counter:day_counter_inst|seg7_decoder:seg7_decoder_inst_1
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|Project2|day_counter:day_counter_inst|seg7_decoder:seg7_decoder_inst_0
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|Project2|day_counter:day_counter_inst|clk_div:clk_div_inst
+clk_in => led~reg0.CLK
+clk_in => clk_out~reg0.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

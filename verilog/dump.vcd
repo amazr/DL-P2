@@ -1,0 +1,69 @@
+$date
+	Fri Oct 16 03:35:07 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_clk $end
+$var wire 1 ! clk_out $end
+$var reg 1 " clk_in $end
+$scope module U0 $end
+$var wire 1 " clk_in $end
+$var wire 1 ! clk_out $end
+$var reg 23 # counter [22:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 #
+1"
+1!
+$end
+#10000
+0"
+#20000
+0!
+b1 #
+1"
+#30000
+0"
+#40000
+1!
+b10 #
+1"
+#50000
+0"
+#60000
+0!
+b1 #
+1"
+#70000
+0"
+#80000
+1!
+b10 #
+1"
+#90000
+0"
+#100000
+0!
+b1 #
+1"
+#110000
+0"
+#120000
+1!
+b10 #
+1"
+#130000
+0"
+#140000
+0!
+b1 #
+1"
+#150000
+0"

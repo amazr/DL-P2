@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clk_div.v(7): always construct contains both blocking and non-blocking assignments File: C:/Users/alexm/Documents/ecen2350/Project2_Work/verilog/clk_div.v Line: 7
