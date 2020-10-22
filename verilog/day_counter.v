@@ -1,6 +1,7 @@
-module day_counter (ADC_CLK_10, reset, LED0, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
+module day_counter (ADC_CLK_10, reset, rate, LED0, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
     input ADC_CLK_10;
     input reset;
+    input rate;
     output wire LED0;
     output [7:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
     wire [3:0] off = 4'b1111;
@@ -15,7 +16,7 @@ module day_counter (ADC_CLK_10, reset, LED0, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5)
     seg7_decoder seg7_decoder_inst_0(.in(off), .out(HEX0));
     
     //Clock division
-    clk_div clk_div_inst (.clk_in(ADC_CLK_10), .clk_out(clk), .led(LED0));
+    clk_div clk_div_inst (.clk_in(ADC_CLK_10), .clk_out(clk), .led(LED0), .rate(rate));
 
     always @ (posedge clk or negedge reset)
     begin

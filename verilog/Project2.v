@@ -10,6 +10,7 @@ module Project2 (SW, KEY, ADC_CLK_10, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
     (
         .ADC_CLK_10(ADC_CLK_10),
         .reset(KEY[0]),
+        .rate(KEY[1]),
         .LED0(LEDR[0]),
         .HEX0(HEX0), 
         .HEX1(HEX1), 
